@@ -1,0 +1,249 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif Display", serif;
+}
+/* Nav */
+.nav {
+  padding: 0rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #80a7ce;
+}
+.main-flag {
+  max-width: 10rem;
+  height: 3rem;
+}
+.nav-link:link,
+.nav-link:active {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1px 5px;
+  text-shadow: 0px 0px 0.5px rgba(0, 0, 0, 0.356);
+}
+.nav-link:hover,
+.nav-link:visited {
+  background-color: #fff;
+  color: black;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  padding: 0rem 3rem;
+}
+/* Hero Section */
+.hero {
+  background-image: url(img/lake.jpeg);
+  background-size: cover;
+  height: 50rem;
+  display: flex;
+  align-items: center;
+}
+.hero:hover {
+  background-image: url(img/ski.jpeg);
+  background-size: cover;
+}
+.hero-copy {
+  max-width: 55rem;
+  margin: 0rem auto;
+  padding: 2.4rem 4.8rem;
+  background-color: #ffffffa9;
+}
+.hero-headline {
+  font-size: 3rem;
+}
+.hero-subheadline {
+  font-size: 1.6rem;
+}
+/* Attraction Section */
+.attractions-section {
+  margin: 0rem auto;
+  background: none;
+  background-color: #fff;
+  padding: 4.8rem 2.4rem;
+  max-width: 100rem;
+}
+.attractions-img {
+  height: 20rem;
+  width: 30rem;
+}
+.attraction-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 10rem;
+  margin-top: 4.8rem;
+}
+.attraction-card {
+  box-shadow: 1px -0.5px 5px 0.5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 25rem;
+  overflow: hidden;
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.attraction-card:hover {
+  transform: translate(0%, -3%);
+  transition: all 0.4s;
+}
+.card-copy {
+  padding: 2rem 1rem 2rem;
+}
+h3 {
+  width: 48rem;
+  font-size: 2.2rem;
+  border-bottom: 3px solid #80a7ce;
+  margin: 0 auto;
+}
+/* ABOUT Sections */
+.about-section {
+  padding: 4.8rem 2.4rem;
+  margin: 0 auto;
+  max-width: 100rem;
+  text-align: center;
+
+  border-radius: 11px;
+}
+.about-headline {
+  width: 37rem;
+}
+.about-section p {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  line-height: 1.6;
+}
+.about-section span {
+  color: #80a7ce;
+}
+/* Tour Guide */
+
+.tour-guides-section {
+  padding: 4.8rem 2.4rem;
+  margin: 0 auto;
+  max-width: 100rem;
+}
+.tour-guides-headline {
+  width: 50rem;
+}
+.tour-guide-img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100px;
+  border: 6px solid #80a7ce;
+}
+.tour-guide-img:hover {
+  transform: scale(1.1);
+}
+#tt {
+  color: #000;
+}
+.tour-guides-cards {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: space-around;
+}
+.tour-guide-card {
+  /* box-shadow: 1px -0.5px 5px 0.5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 20rem;
+  overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tour-guide-info {
+  padding: 2rem 1rem 2rem;
+}
+.tour-guide-name {
+  font-size: 1.8rem;
+}
+.tour-guide-title,
+.tour-guide-email {
+  font-weight: 400;
+  color: #728eaa;
+  font-style: italic;
+}
+.tour-guides-description {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+.tour-guides-description span {
+  color: red;
+}
+/* GALLERY */
+.gallery-heading {
+  width: 67rem;
+}
+.gallery-img-section {
+  padding: 4.8rem 2.4rem 10rem;
+  width: 100rem;
+  margin: 0rem auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+.gallery-img {
+  width: 15rem;
+  height: 15rem;
+  display: block;
+  width: 100%;
+  transition: all 0.3s;
+}
+.gallery-img:hover {
+  transform: scale(1.2);
+}
+.gallery-img-box {
+  overflow: hidden;
+}
+/* FOOTER */
+.footer {
+  padding: 3.8rem 3.2rem 2.4rem;
+  background-color: #80a7ce;
+  color: #000;
+}
+.footer-headline {
+  font-size: 1.4rem;
+  text-align: center;
+  width: 45rem;
+  margin: 0 auto;
+  border-bottom: 3px solid #fff;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+.footer-social-media-links-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-social-media-links {
+  display: flex;
+}
+.footer-social-media-icon {
+  height: 2rem;
+  width: 2rem;
+}
+.footer a:hover {
+  text-decoration: underline;
+  background-color: #ffffffb1;
+  border-radius: 11px;
+  color: #000;
+}
+.copyright {
+  text-align: center;
+}
